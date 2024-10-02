@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="GraphCursova.Controls.InfoControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GraphCursova.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="800">
+    <Grid Background="#1b1b1d">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Foreground="White" FontSize="24" FontWeight="Bold">Додавання вузла ("Add Vertex"):</TextBlock>
+        <TextBlock Foreground="White" FontSize="16" FontWeight="Bold" TextWrapping="Wrap" Margin="0,40,0,0">
+            За допомогою цієї кнопки ви зможете створювати нові вершини. 
+            Просто натисніть на неї, щоб створити новий вузол у вашому графі.
+        </TextBlock>
+        <TextBlock Foreground="White" FontSize="24" FontWeight="Bold" Margin="0,120,0,0">Додавання ребра ("Add Edge"):</TextBlock>
+        <TextBlock Foreground="White" FontSize="16" FontWeight="Bold" Margin="0,160,0,0" TextWrapping="Wrap">
+           Щоб з'єднати ваші вершини, натисніть на цю кнопку. 
+           У лівому полі введіть номер початкового вузла, а у правому - номер кінцевого. Це створить нове ребро між цими вузлами.
+        </TextBlock>
+        <TextBlock Foreground="White" FontSize="24" FontWeight="Bold" Margin="0,240,0,0">Пошук найкоротшого шляху ("Find Shortest Way"):</TextBlock>
+        <TextBlock Foreground="White" FontSize="16" FontWeight="Bold" Margin="0,280,0,0" TextWrapping="Wrap">
+            З цією функцією ви зможете знайти найкоротший шлях між двома вершинами. 
+            Просто введіть номер початкового вузла у лівому полі та номер кінцевого у правому, і програма знайде найкоротший маршрут.
+        </TextBlock>
+        <TextBlock Foreground="White" FontSize="24" FontWeight="Bold" Margin="0,380,0,0">Переміщення вузлів:</TextBlock>
+        <TextBlock Foreground="White" FontSize="16" FontWeight="Bold" TextWrapping="Wrap" Margin="0,420,0,0">
+            Ви можете легко переміщати вершини за допомогою миші. Просто клацніть і утримуйте вузол мишею, щоб перетягнути його в нове місце.
+        </TextBlock>
+
+    </Grid>
+</UserControl>

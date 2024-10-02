@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="GraphCursova.Controls.WelcomeTextControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GraphCursova.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="1200" d:DesignWidth="1920">
+    <Grid Background="#1b1b1d">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="GraphWayText" FontSize="70" FontWeight="Bold" HorizontalAlignment="Left" Margin="-5,109,0,206" TextAlignment="Center" Width="1533">
+            <TextBlock.Foreground>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#5AC8FA" Offset="0"/>
+                    <GradientStop Color="#fc00fd" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+    GraphWay
+        </TextBlock>
+        <TextBlock FontSize="60" FontWeight="Bold" Foreground="White" Margin="244,201,640,15" TextAlignment="Center">is a</TextBlock>
+        <StackPanel Orientation="Vertical" Margin="396,285,792,382">
+            <TextBlock x:Name="word1" TextAlignment="Center" Height="120">
+                <TextBlock.RenderTransform>
+                    <TranslateTransform/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="word2" TextAlignment="Center" Height="120">
+                <TextBlock.RenderTransform>
+                    <TranslateTransform/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="word3" TextAlignment="Center" Height="120">
+                <TextBlock.RenderTransform>
+                    <TranslateTransform/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="word4" TextAlignment="Center" Height="120">
+                <TextBlock.RenderTransform>
+                    <TranslateTransform/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </StackPanel>
+        <TextBlock Margin="-13,393,384,107" FontSize="60" FontWeight="Bold" Foreground="White" TextAlignment="Center">instrument to create and play with graphs</TextBlock>
+    </Grid>
+</UserControl>
